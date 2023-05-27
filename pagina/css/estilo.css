@@ -137,12 +137,15 @@ grid-template-areas:
 'are5 are5 are5 are6 are6 are6'
 ;
 margin: 4%;
-padding: 2%;
-align-items: center;
+
+
 
 gap:10px;
-width: 80%;
+width: 70%;
 justify-content: center;
+}
+.deporte__hijo h2{
+    color:rgb(121, 18, 18);
 }
 .deporte__hijo h3{
     text-align: center;
@@ -154,17 +157,13 @@ justify-content: center;
 .deporte__hijo{
     display: flex;
     flex-direction: column;
-
-gap:20px;
+    margin: 1%;
+    gap:20px;
 
 }
 .deporte__hijo img{
     object-fit: cover;
- 
-}
-.h1b{
 
-    margin-top: 5%;
 }
 .a1{
     grid-area: are1;
@@ -218,17 +217,6 @@ object-fit:cover;
 }
 .info p {
     width: 35%;
-}
-.mapa{
-    margin-top: 10%;
-   display :flex;
-   gap:20px;
-   width: 80%;
-
-}
-.mapa iframe{
-    width: 400px;
-    height: 400px;
 }
 
 .x1{
@@ -304,14 +292,19 @@ display:grid;
     color:white;
     }
 .grilla__hijo {
- 
+    display:flow-root;
+ margin: 10px;
 text-align: center;
     width: 800px;
-    display:inline-flex;
+  
 
+border-bottom: 2px 2px solid grey;
  
  gap:16px;
-
+position: relative; 
+}
+.grilla h3{
+    font-size: 20px;
 }
  
 .grilla__hijo img{
@@ -366,26 +359,27 @@ text-align: center;
     grid-area: area8;
    
 }
+.grilla_hijo__fecha{
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    margin: 5px;
+}
 .donde{
 
-    display: grid;
+    display:inline-flex;
     width: 80%;
-    grid-template-columns:repeat (2,fr);
-    grid-template-rows:repeat (2,fr);
-    grid-template-areas:
-     'area01 area01'
-    'area02 area02';
-    margin: 4% 2%;
-
-  
+    margin: 2% ;
 }
-.b1{
-grid-area: area01;
+.donde__hijo{
+    display: flexbox;
+   padding: 2%;
+   margin: 2%;
 }
+.donde__hijo iframe{
 
-.b2{
-
-    grid-area: area02;
+    width: 400px;
+    height: 400px;
 }
 .donde__hijo img{
 
@@ -394,3 +388,51 @@ width: 400px;
 height: 400px;
 
 }
+.h1b{
+ 
+    
+    margin: 2%;
+font-size: 15px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-style: inherit;
+color: rgb(15, 15, 15);
+    
+}
+ hr {
+    margin: 1%;
+        height: 5px;
+        width: 40%;
+                background-color: rgb(15, 15, 15);
+      }
+
+      .container-fluid{
+        background-color: rgb(145, 31, 31);
+        
+      }
+.navbar-brand{
+    color:white;
+    font-size: 35px;
+    font-style: solid;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+      .btn{
+        background-color: rgb(129, 23, 23);
+        border:none;
+      }
+
+
+      .contactos{
+        display:flexbox ;
+        gap: 20px;
+        margin: 2% 25%;
+        padding: 2%;
+        width: 40%;
+     
+
+      }
+      .contacto button{
+position: relative;
+left:auto;
+      }

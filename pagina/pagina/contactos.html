@@ -13,7 +13,7 @@
 <body>
 
   <header>
-    <nav class="navbar bg-body-tertiary fixed-top">
+    <nav class="navbar bg-body-tertiary ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Encabezado Del Dia</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -33,14 +33,16 @@
                   <a class="nav-link" href="../pagina/deportes.html">Deportes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../pagina/contactos.html">Contacto</a>
+                  <a class="nav-link" href="../pagina/sucesos.html">Sucesos</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="../pagina/encuentranos.html">Encuentranos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../pagina/sucesos.html">Sucesos</a>
+                    
+                    <a class="nav-link" href="../pagina/contactos.html">Contacto</a>
                   </li>
+
 
               <form class="d-flex mt-3" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -54,36 +56,32 @@
         </header>
             <main>
               
+              <h1 class="h1b">
+               Contactanos
+              </h1>
+              <hr></hr>
+<section class="contactos">
 
 
-                <section class="contacto">
-                  <div>
-                    <h1>Contactanos</h1>
-                  </div>
-                   <div>
-                    <label for="nombre"> Nombre : </label>
-                    <input type="text" placeholder="Ingrese su nombre..." name="Nombre">
-                   </div>
-<div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              
+              <div class="mb-3">
+                <label for="exampleFormControlInput2" class="form-label">Motivo</label>
+                <input type="email" class="form-control" id="exampleFormControlInput2">
+              </div>
 
-    <label for="email">Email:</label>
-    <input type="email" placeholder="ejemplo@gmail.com" name="email">
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
 
-</div>
-<div>
-    <label for="mensaje" Deje su mensaje:></label>
-<textarea name="mensaje" placeholder="Escriba su mensaje " cols="30" rows="20">
-
-</textarea>
-
-</div>
-<div>
-
-    <button type="submit">Enviar</button>
-</div>
-                </section>
-
-
+            
+              <button class="btn btn-primary" type="submit">Enviar</button>
+              
+            </section>
 
 
 
